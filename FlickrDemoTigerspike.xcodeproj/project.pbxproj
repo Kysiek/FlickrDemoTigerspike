@@ -12,6 +12,7 @@
 		113EE1EB1E55FE9800D50DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1E91E55FE9800D50DD3 /* Main.storyboard */; };
 		113EE1ED1E55FE9800D50DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */; };
 		113EE1F01E55FE9800D50DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */; };
+		9E1D102905AB2E339F5CB314 /* Pods_FlickrDemoTigerspike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113EE1EF1E55FE9800D50DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113EE1F11E55FE9800D50DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5BAB8C519D6EC16B9AEA11 /* Pods-FlickrDemoTigerspike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.release.xcconfig"; sourceTree = "<group>"; };
+		7D09856510F154F7E48802D3 /* Pods-FlickrDemoTigerspike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.debug.xcconfig"; sourceTree = "<group>"; };
+		93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrDemoTigerspike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1D102905AB2E339F5CB314 /* Pods_FlickrDemoTigerspike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				113EE1E41E55FE9800D50DD3 /* FlickrDemoTigerspike */,
 				113EE1E31E55FE9800D50DD3 /* Products */,
+				985E039DA00744C852D3FD4E /* Pods */,
+				8F05F92312789B50F2AA1194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = FlickrDemoTigerspike;
 			sourceTree = "<group>";
 		};
+		8F05F92312789B50F2AA1194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		985E039DA00744C852D3FD4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D09856510F154F7E48802D3 /* Pods-FlickrDemoTigerspike.debug.xcconfig */,
+				5F5BAB8C519D6EC16B9AEA11 /* Pods-FlickrDemoTigerspike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 113EE1F41E55FE9800D50DD3 /* Build configuration list for PBXNativeTarget "FlickrDemoTigerspike" */;
 			buildPhases = (
+				846BC6736ECB0ACE38056783 /* [CP] Check Pods Manifest.lock */,
 				113EE1DE1E55FE9800D50DD3 /* Sources */,
 				113EE1DF1E55FE9800D50DD3 /* Frameworks */,
 				113EE1E01E55FE9800D50DD3 /* Resources */,
+				1A3164B5E4BDBF4BB9C2A1E9 /* [CP] Embed Pods Frameworks */,
+				89512474E11F47404B3EBCFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A3164B5E4BDBF4BB9C2A1E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846BC6736ECB0ACE38056783 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89512474E11F47404B3EBCFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		113EE1DE1E55FE9800D50DD3 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		113EE1F51E55FE9800D50DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D09856510F154F7E48802D3 /* Pods-FlickrDemoTigerspike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMF7W9X566;
@@ -272,6 +348,7 @@
 		};
 		113EE1F61E55FE9800D50DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5BAB8C519D6EC16B9AEA11 /* Pods-FlickrDemoTigerspike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMF7W9X566;
