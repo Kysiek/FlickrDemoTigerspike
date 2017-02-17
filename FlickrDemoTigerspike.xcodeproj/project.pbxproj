@@ -8,21 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		113EE1E61E55FE9800D50DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE1E51E55FE9800D50DD3 /* AppDelegate.swift */; };
-		113EE1E81E55FE9800D50DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE1E71E55FE9800D50DD3 /* ViewController.swift */; };
-		113EE1EB1E55FE9800D50DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1E91E55FE9800D50DD3 /* Main.storyboard */; };
 		113EE1ED1E55FE9800D50DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */; };
 		113EE1F01E55FE9800D50DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */; };
+		113EE1F81E56E4E600D50DD3 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE1F71E56E4E600D50DD3 /* FlowController.swift */; };
+		113EE1FF1E56E83600D50DD3 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE1FD1E56E83600D50DD3 /* PhotosViewController.swift */; };
+		113EE2001E56E83600D50DD3 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1FE1E56E83600D50DD3 /* PhotosViewController.xib */; };
+		113EE2031E56E97F00D50DD3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE2011E56E97F00D50DD3 /* DetailsViewController.swift */; };
+		113EE2041E56E97F00D50DD3 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113EE2021E56E97F00D50DD3 /* DetailsViewController.xib */; };
+		113EE2061E56F6EC00D50DD3 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE2051E56F6EC00D50DD3 /* PhotosViewModel.swift */; };
 		9E1D102905AB2E339F5CB314 /* Pods_FlickrDemoTigerspike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		113EE1E21E55FE9800D50DD3 /* FlickrDemoTigerspike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrDemoTigerspike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113EE1E51E55FE9800D50DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		113EE1E71E55FE9800D50DD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		113EE1EA1E55FE9800D50DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113EE1EF1E55FE9800D50DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113EE1F11E55FE9800D50DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113EE1F71E56E4E600D50DD3 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		113EE1FD1E56E83600D50DD3 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		113EE1FE1E56E83600D50DD3 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		113EE2011E56E97F00D50DD3 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		113EE2021E56E97F00D50DD3 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		113EE2051E56F6EC00D50DD3 /* PhotosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		5F5BAB8C519D6EC16B9AEA11 /* Pods-FlickrDemoTigerspike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.release.xcconfig"; sourceTree = "<group>"; };
 		7D09856510F154F7E48802D3 /* Pods-FlickrDemoTigerspike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.debug.xcconfig"; sourceTree = "<group>"; };
 		93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrDemoTigerspike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +69,58 @@
 		113EE1E41E55FE9800D50DD3 /* FlickrDemoTigerspike */ = {
 			isa = PBXGroup;
 			children = (
+				113EE2071E56F6FD00D50DD3 /* Networking */,
+				113EE1FA1E56E7ED00D50DD3 /* Content */,
 				113EE1E51E55FE9800D50DD3 /* AppDelegate.swift */,
-				113EE1E71E55FE9800D50DD3 /* ViewController.swift */,
-				113EE1E91E55FE9800D50DD3 /* Main.storyboard */,
 				113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */,
 				113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */,
 				113EE1F11E55FE9800D50DD3 /* Info.plist */,
 			);
 			path = FlickrDemoTigerspike;
+			sourceTree = "<group>";
+		};
+		113EE1F91E56E7A700D50DD3 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				113EE1F71E56E4E600D50DD3 /* FlowController.swift */,
+			);
+			name = Flow;
+			sourceTree = "<group>";
+		};
+		113EE1FA1E56E7ED00D50DD3 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				113EE1F91E56E7A700D50DD3 /* Flow */,
+				113EE1FC1E56E80600D50DD3 /* details */,
+				113EE1FB1E56E7F600D50DD3 /* photos */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
+		113EE1FB1E56E7F600D50DD3 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				113EE1FD1E56E83600D50DD3 /* PhotosViewController.swift */,
+				113EE1FE1E56E83600D50DD3 /* PhotosViewController.xib */,
+				113EE2051E56F6EC00D50DD3 /* PhotosViewModel.swift */,
+			);
+			name = photos;
+			sourceTree = "<group>";
+		};
+		113EE1FC1E56E80600D50DD3 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				113EE2011E56E97F00D50DD3 /* DetailsViewController.swift */,
+				113EE2021E56E97F00D50DD3 /* DetailsViewController.xib */,
+			);
+			name = details;
+			sourceTree = "<group>";
+		};
+		113EE2071E56F6FD00D50DD3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		8F05F92312789B50F2AA1194 /* Frameworks */ = {
@@ -151,9 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113EE2001E56E83600D50DD3 /* PhotosViewController.xib in Resources */,
 				113EE1F01E55FE9800D50DD3 /* LaunchScreen.storyboard in Resources */,
 				113EE1ED1E55FE9800D50DD3 /* Assets.xcassets in Resources */,
-				113EE1EB1E55FE9800D50DD3 /* Main.storyboard in Resources */,
+				113EE2041E56E97F00D50DD3 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,22 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113EE1E81E55FE9800D50DD3 /* ViewController.swift in Sources */,
+				113EE1FF1E56E83600D50DD3 /* PhotosViewController.swift in Sources */,
 				113EE1E61E55FE9800D50DD3 /* AppDelegate.swift in Sources */,
+				113EE2061E56F6EC00D50DD3 /* PhotosViewModel.swift in Sources */,
+				113EE1F81E56E4E600D50DD3 /* FlowController.swift in Sources */,
+				113EE2031E56E97F00D50DD3 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		113EE1E91E55FE9800D50DD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				113EE1EA1E55FE9800D50DD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -379,6 +427,7 @@
 				113EE1F61E55FE9800D50DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
