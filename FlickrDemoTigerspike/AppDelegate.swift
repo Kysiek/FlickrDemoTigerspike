@@ -12,10 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var flowController: FlowController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainNavigationController = UINavigationController()
+        flowController = FlowController(navigationController: mainNavigationController)
+        self.window?.rootViewController = mainNavigationController
+        window?.makeKeyAndVisible()
+        
+        flowController.startAppFlow()
+        
         return true
     }
 
