@@ -6,6 +6,7 @@ target 'FlickrDemoTigerspike' do
   use_frameworks!
 	
   # Pods for FlickrDemoTigerspike
-  pod 'Moya'
-  pod 'DZNEmptyDataSet'
+  pod 'Alamofire', '~> 4.3'
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'SDWebImage', '~>3.8'
 end

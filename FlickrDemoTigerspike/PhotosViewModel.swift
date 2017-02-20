@@ -10,4 +10,23 @@ import Foundation
 
 class PhotosViewModel {
     
+    let photosService: PhotosService
+    
+    init(photosService: PhotosService) {
+        self.photosService = photosService
+    }
+    
+    func getPhotos(having tag: String?) {
+        
+        photosService.getPhotosMetaData(
+            having: tag,
+            onSuccess: { photoMetaDataList in
+                
+            },
+            onError: { errorMessage in
+                print(errorMessage)
+            }
+        )
+    }
+    
 }
