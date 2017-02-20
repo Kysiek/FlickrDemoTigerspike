@@ -15,9 +15,11 @@ protocol PhotosViewControllerDelegate: class {
 class PhotosViewController: UIViewController {
 
     weak var delegate: PhotosViewControllerDelegate?
+    var viewModel: PhotosViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.getPhotos(having: nil)
     }
 
     @IBAction func showDetailsTapped(_ sender: Any) {

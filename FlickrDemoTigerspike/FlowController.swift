@@ -15,6 +15,7 @@ import UIKit
 class FlowController {
     
     var navigationController: UINavigationController!
+    var photosService = PhotosService()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,6 +24,7 @@ class FlowController {
     func startAppFlow() {
         let photosVC = PhotosViewController()
         photosVC.delegate = self
+        photosVC.viewModel = PhotosViewModel(photosService: photosService)
         navigationController.setViewControllers([photosVC], animated: false)
     }
 }
