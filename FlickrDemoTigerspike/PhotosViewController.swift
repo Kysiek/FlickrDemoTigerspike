@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PhotosViewControllerDelegate: class {
-    func showDetailsViewController()
+    func showDetailsViewController(for photoMetaData: PhotoMetaData)
 }
 
 class PhotosViewController: UIViewController {
@@ -17,12 +17,57 @@ class PhotosViewController: UIViewController {
     weak var delegate: PhotosViewControllerDelegate?
     var viewModel: PhotosViewModel?
     
+    @IBOutlet var dataSource: PhotosDataSource! {
+        didSet {
+            dataSource.targetViewController = self
+        }
+    }
+    
+    var searchController: UISearchController = UISearchController(searchResultsController: nil)
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.getPhotos(having: nil)
+        title = "Ficklr demo"
+        searchController.searchBar.delegate = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        dataSource.tableView.tableHeaderView = searchController.searchBar
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(loadPhotos), for: .valueChanged)
+        dataSource.tableView.addSubview(refreshControl)
+        
+        loadPhotos()
     }
-
-    @IBAction func showDetailsTapped(_ sender: Any) {
-        delegate?.showDetailsViewController()
+    
+    func didSelect(photo: PhotoMetaData?) {
+        if let photo = photo {
+            delegate?.showDetailsViewController(for: photo)
+        }
+    }
+    
+    internal func loadPhotos() {
+        viewModel?.getPhotos(
+            having: searchController.searchBar.text,
+            onSuccess: { photoMetaDataList in
+                DispatchQueue.main.async {
+                    self.dataSource.photoMetaDataList = photoMetaDataList
+                    self.refreshControl.endRefreshing()
+                }
+            },
+            onError: { errorMessage in
+                DispatchQueue.main.async {
+                    self.refreshControl.endRefreshing()
+                    self.showInformation(containing: errorMessage, type: .error)
+                }
+            }
+        )
+    }
+    
+}
+extension PhotosViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        loadPhotos()
     }
 }

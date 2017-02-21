@@ -1,24 +1,30 @@
 PODS:
   - Alamofire (4.3.0)
-  - AlamofireObjectMapper (4.0.1):
+  - AlamofireObjectMapper (4.0.2):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
-  - ObjectMapper (2.2.2)
+  - HexColors (2.2.1)
+  - ObjectMapper (2.2.3)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3)
   - AlamofireObjectMapper (~> 4.0)
   - SDWebImage (~> 3.8)
+  - TSMessages (~> 0.9)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
-  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  AlamofireObjectMapper: 94923a4320bbe52c1d0d462093277a9d6a755a78
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  ObjectMapper: d3b3de11267f5d971f390eb8d63dd509116a4329
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
 
-PODFILE CHECKSUM: f6f9075323205b57c96745e2d4c91889cc123522
+PODFILE CHECKSUM: e82df8cfa03d88c8cf58414e936834613f872f63
 
 COCOAPODS: 1.1.1

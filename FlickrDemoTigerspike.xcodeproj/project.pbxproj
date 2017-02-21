@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113912981E5CABAE00B20501 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113912971E5CABAE00B20501 /* Photos.framework */; };
+		1139129A1E5CAEF000B20501 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113912991E5CAEF000B20501 /* MessageUI.framework */; };
+		1139129D1E5CFCB000B20501 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 1139129C1E5CFCB000B20501 /* TSMessagesDefaultDesign.json */; };
 		113EE1E61E55FE9800D50DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE1E51E55FE9800D50DD3 /* AppDelegate.swift */; };
 		113EE1ED1E55FE9800D50DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */; };
 		113EE1F01E55FE9800D50DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */; };
@@ -19,12 +22,32 @@
 		113EE20B1E56F9D600D50DD3 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113EE20A1E56F9D600D50DD3 /* PhotosService.swift */; };
 		11D2CC9C1E5B6C140052EF9C /* PhotoMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CC9B1E5B6C140052EF9C /* PhotoMetaData.swift */; };
 		11D2CCA11E5B77A60052EF9C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCA01E5B77A60052EF9C /* Configuration.swift */; };
-		11D2CCA31E5B79440052EF9C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCA21E5B79440052EF9C /* ErrorMessage.swift */; };
+		11D2CCA31E5B79440052EF9C /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCA21E5B79440052EF9C /* AlertMessage.swift */; };
 		11D2CCA51E5B7FFF0052EF9C /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCA41E5B7FFF0052EF9C /* PhotosResponse.swift */; };
+		11D2CCA71E5BA35D0052EF9C /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCA61E5BA35D0052EF9C /* PhotosDataSource.swift */; };
+		11D2CCAC1E5BA5AC0052EF9C /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCAA1E5BA5AC0052EF9C /* PhotosTableViewCell.swift */; };
+		11D2CCAD1E5BA5AC0052EF9C /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCAB1E5BA5AC0052EF9C /* PhotosTableViewCell.xib */; };
+		11D2CCAF1E5BB1850052EF9C /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCAE1E5BB1850052EF9C /* Struct.swift */; };
+		11D2CCB21E5BBBB90052EF9C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCB11E5BBBB90052EF9C /* UIViewControllerExtension.swift */; };
+		11D2CCB51E5C908F0052EF9C /* PhotoDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCB31E5C908F0052EF9C /* PhotoDetailHeaderCell.swift */; };
+		11D2CCB61E5C908F0052EF9C /* PhotoDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCB41E5C908F0052EF9C /* PhotoDetailHeaderCell.xib */; };
+		11D2CCBB1E5C92590052EF9C /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCB81E5C92540052EF9C /* Raleway-Bold.ttf */; };
+		11D2CCBC1E5C925B0052EF9C /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCBA1E5C92540052EF9C /* Raleway-Medium.ttf */; };
+		11D2CCBD1E5C925E0052EF9C /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCB91E5C92540052EF9C /* Raleway-Light.ttf */; };
+		11D2CCC01E5C931C0052EF9C /* DetailPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCBE1E5C931C0052EF9C /* DetailPhotoCell.swift */; };
+		11D2CCC11E5C931C0052EF9C /* DetailPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCBF1E5C931C0052EF9C /* DetailPhotoCell.xib */; };
+		11D2CCC61E5C93490052EF9C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCC21E5C93460052EF9C /* Roboto-Bold.ttf */; };
+		11D2CCC71E5C93490052EF9C /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCC31E5C93460052EF9C /* Roboto-Light.ttf */; };
+		11D2CCC81E5C93490052EF9C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCC41E5C93460052EF9C /* Roboto-Medium.ttf */; };
+		11D2CCC91E5C93490052EF9C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D2CCC51E5C93460052EF9C /* Roboto-Regular.ttf */; };
+		11D2CCCB1E5C94190052EF9C /* PhotoDetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CCCA1E5C94190052EF9C /* PhotoDetailsDataSource.swift */; };
 		9E1D102905AB2E339F5CB314 /* Pods_FlickrDemoTigerspike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113912971E5CABAE00B20501 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		113912991E5CAEF000B20501 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1139129C1E5CFCB000B20501 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
 		113EE1E21E55FE9800D50DD3 /* FlickrDemoTigerspike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrDemoTigerspike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113EE1E51E55FE9800D50DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,8 +62,25 @@
 		113EE20A1E56F9D600D50DD3 /* PhotosService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		11D2CC9B1E5B6C140052EF9C /* PhotoMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMetaData.swift; sourceTree = "<group>"; };
 		11D2CCA01E5B77A60052EF9C /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		11D2CCA21E5B79440052EF9C /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		11D2CCA21E5B79440052EF9C /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		11D2CCA41E5B7FFF0052EF9C /* PhotosResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		11D2CCA61E5BA35D0052EF9C /* PhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
+		11D2CCAA1E5BA5AC0052EF9C /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		11D2CCAB1E5BA5AC0052EF9C /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		11D2CCAE1E5BB1850052EF9C /* Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		11D2CCB11E5BBBB90052EF9C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		11D2CCB31E5C908F0052EF9C /* PhotoDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailHeaderCell.swift; sourceTree = "<group>"; };
+		11D2CCB41E5C908F0052EF9C /* PhotoDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailHeaderCell.xib; sourceTree = "<group>"; };
+		11D2CCB81E5C92540052EF9C /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		11D2CCB91E5C92540052EF9C /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		11D2CCBA1E5C92540052EF9C /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		11D2CCBE1E5C931C0052EF9C /* DetailPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotoCell.swift; sourceTree = "<group>"; };
+		11D2CCBF1E5C931C0052EF9C /* DetailPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPhotoCell.xib; sourceTree = "<group>"; };
+		11D2CCC21E5C93460052EF9C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		11D2CCC31E5C93460052EF9C /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		11D2CCC41E5C93460052EF9C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		11D2CCC51E5C93460052EF9C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		11D2CCCA1E5C94190052EF9C /* PhotoDetailsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsDataSource.swift; sourceTree = "<group>"; };
 		5F5BAB8C519D6EC16B9AEA11 /* Pods-FlickrDemoTigerspike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.release.xcconfig"; sourceTree = "<group>"; };
 		7D09856510F154F7E48802D3 /* Pods-FlickrDemoTigerspike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrDemoTigerspike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrDemoTigerspike/Pods-FlickrDemoTigerspike.debug.xcconfig"; sourceTree = "<group>"; };
 		93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrDemoTigerspike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1139129A1E5CAEF000B20501 /* MessageUI.framework in Frameworks */,
+				113912981E5CABAE00B20501 /* Photos.framework in Frameworks */,
 				9E1D102905AB2E339F5CB314 /* Pods_FlickrDemoTigerspike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1139129B1E5CE8DF00B20501 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				11D2CCAA1E5BA5AC0052EF9C /* PhotosTableViewCell.swift */,
+				11D2CCAB1E5BA5AC0052EF9C /* PhotosTableViewCell.xib */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		113EE1D91E55FE9800D50DD3 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +130,8 @@
 		113EE1E41E55FE9800D50DD3 /* FlickrDemoTigerspike */ = {
 			isa = PBXGroup;
 			children = (
+				11D2CCB71E5C921F0052EF9C /* Fonts */,
+				11D2CCB01E5BBB840052EF9C /* Tools */,
 				11D2CC9D1E5B77810052EF9C /* Configuration */,
 				11D2CC9A1E5B6C070052EF9C /* Model */,
 				113EE2071E56F6FD00D50DD3 /* Networking */,
@@ -87,6 +140,7 @@
 				113EE1EC1E55FE9800D50DD3 /* Assets.xcassets */,
 				113EE1EE1E55FE9800D50DD3 /* LaunchScreen.storyboard */,
 				113EE1F11E55FE9800D50DD3 /* Info.plist */,
+				1139129C1E5CFCB000B20501 /* TSMessagesDefaultDesign.json */,
 			);
 			path = FlickrDemoTigerspike;
 			sourceTree = "<group>";
@@ -102,6 +156,7 @@
 		113EE1FA1E56E7ED00D50DD3 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				1139129B1E5CE8DF00B20501 /* common */,
 				113EE1F91E56E7A700D50DD3 /* Flow */,
 				113EE1FC1E56E80600D50DD3 /* details */,
 				113EE1FB1E56E7F600D50DD3 /* photos */,
@@ -115,6 +170,7 @@
 				113EE1FD1E56E83600D50DD3 /* PhotosViewController.swift */,
 				113EE1FE1E56E83600D50DD3 /* PhotosViewController.xib */,
 				113EE2051E56F6EC00D50DD3 /* PhotosViewModel.swift */,
+				11D2CCA61E5BA35D0052EF9C /* PhotosDataSource.swift */,
 			);
 			name = photos;
 			sourceTree = "<group>";
@@ -124,6 +180,11 @@
 			children = (
 				113EE2011E56E97F00D50DD3 /* DetailsViewController.swift */,
 				113EE2021E56E97F00D50DD3 /* DetailsViewController.xib */,
+				11D2CCB31E5C908F0052EF9C /* PhotoDetailHeaderCell.swift */,
+				11D2CCB41E5C908F0052EF9C /* PhotoDetailHeaderCell.xib */,
+				11D2CCBE1E5C931C0052EF9C /* DetailPhotoCell.swift */,
+				11D2CCBF1E5C931C0052EF9C /* DetailPhotoCell.xib */,
+				11D2CCCA1E5C94190052EF9C /* PhotoDetailsDataSource.swift */,
 			);
 			name = details;
 			sourceTree = "<group>";
@@ -140,8 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				11D2CC9B1E5B6C140052EF9C /* PhotoMetaData.swift */,
-				11D2CCA21E5B79440052EF9C /* ErrorMessage.swift */,
+				11D2CCA21E5B79440052EF9C /* AlertMessage.swift */,
 				11D2CCA41E5B7FFF0052EF9C /* PhotosResponse.swift */,
+				11D2CCAE1E5BB1850052EF9C /* Struct.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -156,9 +218,33 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		11D2CCB01E5BBB840052EF9C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				11D2CCB11E5BBBB90052EF9C /* UIViewControllerExtension.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		11D2CCB71E5C921F0052EF9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11D2CCB81E5C92540052EF9C /* Raleway-Bold.ttf */,
+				11D2CCB91E5C92540052EF9C /* Raleway-Light.ttf */,
+				11D2CCBA1E5C92540052EF9C /* Raleway-Medium.ttf */,
+				11D2CCC21E5C93460052EF9C /* Roboto-Bold.ttf */,
+				11D2CCC31E5C93460052EF9C /* Roboto-Light.ttf */,
+				11D2CCC41E5C93460052EF9C /* Roboto-Medium.ttf */,
+				11D2CCC51E5C93460052EF9C /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		8F05F92312789B50F2AA1194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				113912991E5CAEF000B20501 /* MessageUI.framework */,
+				113912971E5CABAE00B20501 /* Photos.framework */,
 				93815FC53257C69BDDEBD587 /* Pods_FlickrDemoTigerspike.framework */,
 			);
 			name = Frameworks;
@@ -236,10 +322,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D2CCC81E5C93490052EF9C /* Roboto-Medium.ttf in Resources */,
+				11D2CCBB1E5C92590052EF9C /* Raleway-Bold.ttf in Resources */,
+				11D2CCC11E5C931C0052EF9C /* DetailPhotoCell.xib in Resources */,
+				11D2CCC71E5C93490052EF9C /* Roboto-Light.ttf in Resources */,
+				11D2CCBC1E5C925B0052EF9C /* Raleway-Medium.ttf in Resources */,
 				113EE2001E56E83600D50DD3 /* PhotosViewController.xib in Resources */,
+				11D2CCC61E5C93490052EF9C /* Roboto-Bold.ttf in Resources */,
+				1139129D1E5CFCB000B20501 /* TSMessagesDefaultDesign.json in Resources */,
 				113EE1F01E55FE9800D50DD3 /* LaunchScreen.storyboard in Resources */,
+				11D2CCC91E5C93490052EF9C /* Roboto-Regular.ttf in Resources */,
+				11D2CCB61E5C908F0052EF9C /* PhotoDetailHeaderCell.xib in Resources */,
 				113EE1ED1E55FE9800D50DD3 /* Assets.xcassets in Resources */,
+				11D2CCBD1E5C925E0052EF9C /* Raleway-Light.ttf in Resources */,
 				113EE2041E56E97F00D50DD3 /* DetailsViewController.xib in Resources */,
+				11D2CCAD1E5BA5AC0052EF9C /* PhotosTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,15 +395,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D2CCAC1E5BA5AC0052EF9C /* PhotosTableViewCell.swift in Sources */,
 				113EE1FF1E56E83600D50DD3 /* PhotosViewController.swift in Sources */,
+				11D2CCB51E5C908F0052EF9C /* PhotoDetailHeaderCell.swift in Sources */,
 				113EE1E61E55FE9800D50DD3 /* AppDelegate.swift in Sources */,
 				113EE2061E56F6EC00D50DD3 /* PhotosViewModel.swift in Sources */,
+				11D2CCAF1E5BB1850052EF9C /* Struct.swift in Sources */,
 				113EE1F81E56E4E600D50DD3 /* FlowController.swift in Sources */,
-				11D2CCA31E5B79440052EF9C /* ErrorMessage.swift in Sources */,
+				11D2CCA31E5B79440052EF9C /* AlertMessage.swift in Sources */,
 				113EE20B1E56F9D600D50DD3 /* PhotosService.swift in Sources */,
 				11D2CC9C1E5B6C140052EF9C /* PhotoMetaData.swift in Sources */,
+				11D2CCA71E5BA35D0052EF9C /* PhotosDataSource.swift in Sources */,
 				11D2CCA11E5B77A60052EF9C /* Configuration.swift in Sources */,
 				113EE2031E56E97F00D50DD3 /* DetailsViewController.swift in Sources */,
+				11D2CCC01E5C931C0052EF9C /* DetailPhotoCell.swift in Sources */,
+				11D2CCCB1E5C94190052EF9C /* PhotoDetailsDataSource.swift in Sources */,
+				11D2CCB21E5BBBB90052EF9C /* UIViewControllerExtension.swift in Sources */,
 				11D2CCA51E5B7FFF0052EF9C /* PhotosResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,10 +529,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMF7W9X566;
 				INFOPLIST_FILE = FlickrDemoTigerspike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.software.kysiek.FlickrDemoTigerspike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,10 +545,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMF7W9X566;
 				INFOPLIST_FILE = FlickrDemoTigerspike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.software.kysiek.FlickrDemoTigerspike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
