@@ -27,7 +27,7 @@ class PhotosService {
             case .noJsonCallback: return "nojsoncallback"
             case .langugage: return "lang"
             case .tagMode: return "tagmode"
-            case .tag: return "tag"
+            case .tag: return "tags"
             }
         }
         
@@ -51,17 +51,17 @@ class PhotosService {
         QueryParameters.tagMode.key: QueryParameters.tagMode.value
     ]
     
-    func getPhotosMetaData(having tag: String?, onSuccess successHandler: @escaping ([PhotoMetaData]) -> (), onError errorHandler: @escaping (ErrorMessage) -> ()) {
+    func getPhotosMetaData(having tag: String?, onSuccess successHandler: @escaping ([PhotoMetaData]) -> (), onError errorHandler: @escaping (AlertMessage) -> ()) {
         var params = PhotosService.necessaryParams
         
-        if let tag = tag {
+        if let tags = tag, tags.isEmpty == false {
             params[QueryParameters.tag.key] = tag
         }
         
         Alamofire.request(Configuration.Network.BASE_URL, parameters: params)
             .responseObject{ (response: DataResponse<PhotosResponse>) in
                 if let error = response.error {
-                    errorHandler(ErrorMessage(title: "", message: error.localizedDescription))
+                    errorHandler(AlertMessage(title: "Success", message: error.localizedDescription))
                 } else {
                     if let photosResponse = response.result.value, let photoMetaDataList = photosResponse.photoMetaDataList {
                         successHandler(photoMetaDataList)

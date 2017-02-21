@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosViewController" customModule="FlickrDemoTigerspike" customModuleProvider="target">
             <connections>
+                <outlet property="dataSource" destination="PeY-PM-fER" id="4oM-rQ-FCF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,27 +20,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXH-NQ-IfN">
-                    <rect key="frame" x="160.5" y="323" width="54" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNQ-ah-vP3">
-                    <rect key="frame" x="144" y="352" width="87" height="30"/>
-                    <state key="normal" title="Show details"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pNS-Tc-ZA9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <action selector="showDetailsTapped:" destination="-1" eventType="touchUpInside" id="UDE-dm-wNC"/>
+                        <outlet property="dataSource" destination="PeY-PM-fER" id="rzJ-bD-DdE"/>
+                        <outlet property="delegate" destination="PeY-PM-fER" id="UVj-on-ksu"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VXH-NQ-IfN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5nb-Rm-V0p"/>
-                <constraint firstItem="BNQ-ah-vP3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8mS-o4-shF"/>
-                <constraint firstItem="VXH-NQ-IfN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ITU-do-MLT"/>
-                <constraint firstItem="BNQ-ah-vP3" firstAttribute="top" secondItem="VXH-NQ-IfN" secondAttribute="bottom" constant="8" id="hH3-MH-Unp"/>
+                <constraint firstAttribute="trailing" secondItem="pNS-Tc-ZA9" secondAttribute="trailing" id="5AY-qB-0gH"/>
+                <constraint firstItem="pNS-Tc-ZA9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kga-il-kJN"/>
+                <constraint firstItem="pNS-Tc-ZA9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o5e-Se-H4o"/>
+                <constraint firstAttribute="bottom" secondItem="pNS-Tc-ZA9" secondAttribute="bottom" id="yAH-iZ-WpR"/>
             </constraints>
         </view>
+        <customObject id="PeY-PM-fER" customClass="PhotosDataSource" customModule="FlickrDemoTigerspike" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="pNS-Tc-ZA9" id="z1I-bq-vxU"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

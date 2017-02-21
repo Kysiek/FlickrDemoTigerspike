@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController">
             <connections>
+                <outlet property="dataSource" destination="iGo-bP-G2n" id="sZn-Oh-JnJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,19 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-jM-jwR">
-                    <rect key="frame" x="161" y="323" width="53" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l96-lW-iyQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.015686274509803921" green="0.074509803921568626" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iGo-bP-G2n" id="w5i-SH-xfc"/>
+                        <outlet property="delegate" destination="iGo-bP-G2n" id="qJg-2T-UDq"/>
+                    </connections>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.015686274509803921" green="0.074509803921568626" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1ax-jM-jwR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FNI-6p-KNG"/>
-                <constraint firstItem="1ax-jM-jwR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mCM-My-yvf"/>
+                <constraint firstItem="l96-lW-iyQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AvG-Yy-owM"/>
+                <constraint firstItem="l96-lW-iyQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="duW-XY-Qs7"/>
+                <constraint firstAttribute="bottom" secondItem="l96-lW-iyQ" secondAttribute="bottom" id="eGY-Ut-7Bw"/>
+                <constraint firstAttribute="trailing" secondItem="l96-lW-iyQ" secondAttribute="trailing" id="ygw-cM-uxj"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
+        <customObject id="iGo-bP-G2n" customClass="PhotoDetailsDataSource" customModule="FlickrDemoTigerspike" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="l96-lW-iyQ" id="eVX-SZ-kQl"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

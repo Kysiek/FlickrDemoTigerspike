@@ -1,5 +1,5 @@
 //
-//  ErrorMessage.swift
+//  AlertMessage.swift
 //  FlickrDemoTigerspike
 //
 //  Created by Krzysztof Maciążek on 20.02.2017.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ErrorMessage {
+struct AlertMessage {
     var title: String
     var message: String
 }

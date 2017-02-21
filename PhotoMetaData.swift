@@ -13,6 +13,7 @@ struct PhotoMetaData: Mappable {
 
     var title: String?
     var link: String?
+    var media: Media?
     var dateTaken: String?
     var description: String?
     var published: String?
@@ -29,6 +30,11 @@ struct PhotoMetaData: Mappable {
         description <- map["description"]
         tags <- map["tags"]
         published <- map["published"]
-        
+        media <- map["media"]
+    }
+}
+extension PhotoMetaData {
+    func getImageUrl() -> String? {
+        return media?.link
     }
 }
