@@ -34,13 +34,32 @@ class PhotosViewController: UIViewController {
         definesPresentationContext = true
         dataSource.tableView.tableHeaderView = searchController.searchBar
         
+        let sortButton = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(sortAction))
+        self.navigationItem.rightBarButtonItem = sortButton
+        
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(loadPhotos), for: .valueChanged)
         dataSource.tableView.addSubview(refreshControl)
         
         loadPhotos()
     }
-    
+    func sortAction() {
+        let actionSheet = UIAlertController(title: "Sort photos", message: "", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "By published date", style: .default, handler: { _ in
+            let photos = self.dataSource.photoMetaDataList
+            self.dataSource.photoMetaDataList = photos?.sorted { elA, elB in
+                return elA.publishedString!.compare(elB.publishedString!) == .orderedAscending
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "By taken date", style: .default, handler: { _ in
+            let photos = self.dataSource.photoMetaDataList
+            self.dataSource.photoMetaDataList = photos?.sorted { elA, elB in
+                return elA.dateTakenString!.compare(elB.dateTakenString!) == .orderedAscending
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(actionSheet, animated: true, completion: nil)
+    }
     func didSelect(photo: PhotoMetaData?) {
         if let photo = photo {
             delegate?.showDetailsViewController(for: photo)
@@ -48,6 +67,7 @@ class PhotosViewController: UIViewController {
     }
     
     internal func loadPhotos() {
+        self.dataSource.photoMetaDataList = []
         viewModel?.getPhotos(
             having: searchController.searchBar.text,
             onSuccess: { photoMetaDataList in
@@ -68,6 +88,7 @@ class PhotosViewController: UIViewController {
 }
 extension PhotosViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dataSource.scrollTableViewToTop()
         loadPhotos()
     }
 }
