@@ -74,14 +74,15 @@ enum PhotoDetailsTableLayout: Int {
     }
     
     func value(photoMetaData: PhotoMetaData?) -> String? {
+        var metaData = photoMetaData
         switch self {
-        case .photo: return photoMetaData?.getImageUrl()
-        case .title: return photoMetaData?.title
-        case .author: return photoMetaData?.author
-        case .dateTaken: return photoMetaData?.dateTaken
-        case .tags: return photoMetaData?.tags
-        case .published: return photoMetaData?.published
-        case .description: return photoMetaData?.description
+        case .photo: return metaData?.getImageUrl()
+        case .title: return metaData?.title
+        case .author: return metaData?.author
+        case .dateTaken: return metaData?.getDateTakenString()
+        case .tags: return metaData?.tags
+        case .published: return metaData?.getPublishedDateString()
+        case .description: return metaData?.description
         }
     }
     

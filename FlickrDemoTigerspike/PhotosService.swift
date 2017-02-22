@@ -59,12 +59,12 @@ class PhotosService {
         }
         
         Alamofire.request(Configuration.Network.BASE_URL, parameters: params)
-            .responseObject{ (response: DataResponse<PhotosResponse>) in
+            .responseArray(keyPath: "items") { (response: DataResponse<[PhotoMetaData]>) in
                 if let error = response.error {
-                    errorHandler(AlertMessage(title: "Success", message: error.localizedDescription))
+                    errorHandler(AlertMessage(title: "Error", message: error.localizedDescription))
                 } else {
-                    if let photosResponse = response.result.value, let photoMetaDataList = photosResponse.photoMetaDataList {
-                        successHandler(photoMetaDataList)
+                    if let responseArray = response.result.value {
+                        successHandler(responseArray)
                     }
                 }
             }
